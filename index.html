@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Prodi PAI STAI  SABILI</title>
+ <meta charset="utf-8">
+ <meta name="description" content="Prodi PAI STAI SABILI BANDUNG">
+ <meta name="keyword" content="prodi pai, pai, propaganda, publikasi, dokumentasi">
+ <meta name="author" content="Gue">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<!--bagian kanvas seluruh layar-->
+<div class="kanvas">
+
+<!--bagian logo dan Kop-->
+<div class="header">
+  <h2>PRODI PAI - STAI SABILI</h2>
+
+
+  <div id="menubtn">
+    <a href="logout.php"> <img class="logoimage" src="data/image/logoSabili.png"/> </a>
+    <a href="logout.php"><!--Label disini--></a>
+  </div>
+
+
+</div>
+
+
+ 
+
+<!--preview artikel terbaru-->
+<div class="section">
+ 
+   <img class="manualbtn" src="data/button/left.png" onclick="plusDivs(-1)"/>
+        <img src="data/image/slider-img1.jpg" class="sliderimage" />
+        <img src="data/image/slider-img2.jpg" class="sliderimage" />
+        <img src="data/image/slider-img3.jpg" class="sliderimage" />
+   <img class="manualbtn" src="data/button/right.png" onclick="plusDivs(1)"/>
+
+</div>
+
+
+<!--script auto slider-->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("sliderimage");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<!--script manual slider-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("sliderimage");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+<!--menu inline-->
+<div class="menu">
+
+  <div id="menubtn">
+    <a class="" href="data/article/profile.html" target="framekonten"> <img class="imgfolder" src="data/button/profil.png"/> </a>
+    <a href="data/article/profile.html" target="framekonten">Profil</a>
+  </div>
+
+ <div id="menubtn">
+    <a href="data/article/program.html" target="framekonten"> <img class="imgfolder" src="data/button/program.png"/> </a>
+    <a href="data/article/program.html" target="framekonten">Program</a>
+  </div>
+
+ <div id="menubtn">
+    <a href="data/article/dokumentasi.html" target="framekonten"> <img class="imgfolder" src="data/button/dokumentasi.png"/> </a>
+    <a href="data/article/dokumentasi.html" target="framekonten">Dokumentasi</a>
+  </div>
+
+ <div id="menubtn">
+    <a href="data/article/propaganda.html" target="framekonten"> <img class="imgfolder" src="data/button/propaganda.png"/> </a>
+    <div><a href="data/article/propaganda.html" target="framekonten">Propaganda</a></div>
+  </div>
+
+  <div id="menubtn">
+    <a class="" href="data/article/kepengurusan.html" target="framekonten"> <img class="imgfolder" src="data/button/kepengurusan.png"/> </a>
+    <a href="data/article/kepengurusan.html" target="framekonten">Kepengurusan</a>
+  </div>
+
+  <div id="menubtn">
+    <a href="data/article/kontak.html" target="framekonten"> <img class="imgfolder" src="data/button/kontak.png"/> </a>
+    <div><a href="data/article/kontak.html" target="framekonten">Kontak</a></div>
+  </div>
+  
+</div>
+
+
+
+<!--bagian link artikel dan isi artikel di tampilkan-->
+<div class="article">
+
+    <iframe class="konten" name="framekonten" src="data/home/home.html"  scrolling=""
+    marginheight="" marginwidth="" sanbox></iframe>
+
+</div>
+
+
+
+<!--logo, copyright, item lain2-->
+<div class="footer">
+    <h3>STAI SABILI &copy 2021</h3>
+</div>
+
+
+<!--bagian kanvas seluruh layar-->
+</div>
+
+</body>
+</html>
