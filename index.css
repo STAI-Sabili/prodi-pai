@@ -20,10 +20,10 @@ body
 }
 
 .header {
-    background          : linear-gradient(to right, green, lime);
+    background-color    : #ececec;
     border-top          : ;
-    box-shadow          : 7px 7px 5px grey;
-    height              : 80px;
+    box-shadow          : 5px 3px 5px #005500;
+    height              : 90px;
     width               : 900px;
     display             : flex;
     align-items         : center ;
@@ -45,14 +45,15 @@ body
 .menu {
     background-color    : #ececec;
     border-top          : ;
-    box-shadow          : 7px 7px 5px grey;
-    height              : 50px;
-    width               : 900px;
-    display             : flex;
+    box-shadow          : 5px 3px 5px #005500;
+    height              : 550px;
+    width               : 100px;
+    display             : ;
     float               : left;
     align-items         : center ;
     justify-content     : ;
     margin-top          : 15px;
+    margin-right        : 15px;
     overflow            : ;
 }
 
@@ -67,7 +68,7 @@ body
 .section {
     background-color    : #ececec;
     border-top          : ;
-    box-shadow          : 7px 7px 5px grey;
+    box-shadow          : 5px 3px 5px #005500;
     height              : 200px;
     width               : 900px;
     postion             : relative;
@@ -82,10 +83,10 @@ body
     border              : ;
     box-shadow          : ;
     height              : ;
-    width               : ;
+    width               : 785px;
     display             : flex;
     float               : left;
-    box-shadow          : 7px 7px 5px grey;
+    box-shadow          : 5px 3px 5px #005500;
     margin-top          : 15px;
     overflow            : ;
 
@@ -113,6 +114,7 @@ body
     padding             : ;
     clear               : both;
     margin-top          : 15px;
+    margin-left         : 120px;
     text-align          : center;
     overflow            : ;
 }
@@ -133,8 +135,8 @@ div img {
 }
 
 .displayblock {
-    max-width           : ;
-    height              : ;
+    width               : 90px;
+    height              : 90px;
     display             : block;
     margin              : auto;
 }
@@ -163,21 +165,13 @@ a:active{
     
 }
 
-.logoimage {
-    max-width           : ;
-    height              : 70px;
-    width               : 70px;
-    display             : ;
-    margin              : auto;
-}
-
 .sliderimage {
     display         : none;
     float           : left;
     margin          : auto;
     padding         : px;
     width           : 600px;
-    height          : 200px;
+    height          : 140px;
     overflow        : ;
 }
 
@@ -187,8 +181,8 @@ a:active{
 /*--------------------Hover Configurations-----------------*/
 
 #menubtn:hover {
-    border-bottom   :3px solid #00aa00;
-    border-top      :3px solid #55aa00;
+    border-bottom   :3px solid #ffaa00;
+    border-top      :3px solid #ffaa00;
     position:;
     padding:;
     left:;
@@ -196,6 +190,20 @@ a:active{
     background-color:;
     color:;
     margin-top: 3px;
+    display          : ;
+    float            : ;
+}
+
+#menubtn-side:hover {
+    border-bottom   :2px solid #ffaa00;
+    border-top      :2px solid #ffaa00;
+    position:;
+    padding:;
+    left:;
+    border:;
+    background-color:;
+    color:;
+    margin-top: -4px;
     display          : ;
     float            : ;
 }
@@ -271,7 +279,7 @@ a:active{
     padding             :;
     left                :;
     border              :;
-    background-colo     r:;
+    background-color    :;
     color               :;
     margin-right        : 40px;
     display             : block;
@@ -285,6 +293,25 @@ a:active{
   
 }
 
+#menubtn-side {
+    position            :relative;
+    padding             :;
+    left                :;
+    border              :;
+    background-color    :;
+    color               :;
+    margin-right        : 30px;
+    margin-bottom       : 20px;
+    display             : block;
+    float               : ;
+    text-align          : center;
+}
+
+#menubtn-side a {
+    font-size           : 12px;
+    text-decoration     : none;
+  
+}
 
 .faqbtn {
     display             : ;
@@ -304,7 +331,7 @@ a:active{
     justify-content     : ;
     border              : 2px solid green;
     border-radius       : 5px;
-    background-color    : green;
+    background-color    : purple;
     color               : ;
     text-decoration     : none;
     margin              : auto;
@@ -333,3 +360,69 @@ a:active{
     
 }
 
+
+
+
+
+
+
+/*--------------------RWL Configurations-----------------*/
+@media(max-width:890px){
+ .header {
+    height              : ;
+    width               : 99%;
+    overflow            : ;
+ }
+  .section {
+    height              : ;
+    width               : 99%;
+    overflow            : ;
+ }
+ .article {
+    height              : ;
+    width               : 80%;
+    overflow            : ;
+ }
+ .menu {
+    height              : ;
+    width               : 15%;
+    align-items         : ;
+    justify-content     : ;
+    margin-top          : ;
+    margin-right        : 15px;
+    overflow            : ;
+    font-size           : ;
+ }
+ #menubtn-side a{
+    font-size           : 11px;
+    position            :;
+    padding             :;
+    left                :;
+    border              :;
+    background-color    :;
+    color               :;
+    margin-right        :;
+    margin-bottom       :;
+    display             :;
+    float               :;
+    text-align          :;
+ }
+}
+
+
+@media(max-width:520px){
+ #menubtn-side a{
+    font-size           : 9px;
+    position            :;
+    padding             :;
+    left                :;
+    border              :;
+    background-color    :;
+    color               :;
+    margin-right        :;
+    margin-bottom       :;
+    display             :;
+    float               :;
+    text-align          :;
+ }
+}
