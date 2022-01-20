@@ -16,8 +16,8 @@
 }
 
 .divkonten:hover {
-    border-top          : 4px outset #00ff00;
-    border-bottom       : 4px outset #55ff00;
+    border-top          : 4px outset #ffaa00;
+    border-bottom       : 4px outset #ffaa00;
 }
 
 .paragraf {
@@ -44,4 +44,61 @@ img {
     width               : 90px;
     display             : flex;
     float               : left;
+}
+
+
+
+/*--------------------RWL Configurations-----------------*/
+@media(max-width:760px){
+ .divkonten {
+    border              : ;
+    background          : ;
+    box-shadow          : ;
+    height              : 120px;
+    width               : 90%;
+    display             : ;
+    float               : ;
+    align-items         : ;
+    justify-content     : ;
+    margin              : ;
+ }
+
+ .paragraf {
+    height              : 100px;
+    width               : 70%;
+    color               : ;
+    display             : ;
+    float               : ;
+    align-items         : ;
+    justify-content     : ;
+    text-align          : ;
+    clear               : ;
+ }
+ .articleImg {
+  height              : 95%;
+  width               : 95%;
+ }
+}
+
+@media(max-width:450px){
+ .divkonten {
+    font-size           : 12px;
+ }
+
+ .paragraf {
+    font-size           : 12px;
+    height              : 100px;
+    width               : 30%;
+    color               : ;
+    display             : ;
+    float               : ;
+    align-items         : ;
+    justify-content     : ;
+    text-align          : ;
+    clear               : ;
+ }
+ .articleImg {
+  height              : ;
+  width               : ;
+ }
 }
